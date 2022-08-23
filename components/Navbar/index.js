@@ -40,6 +40,7 @@ const Navbar = ({ path }) => {
         <Box>
           <HStack>
             <IconButton
+              data-testid="color_mode_toggle"
               icon={useColorModeValue(<FiMoon />, <FiSun />)}
               size={"md"}
               colorScheme={colorMode === "light" ? "purple" : "yellow"}
