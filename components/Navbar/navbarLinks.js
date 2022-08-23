@@ -1,4 +1,4 @@
-import { Box, Stack, HStack, Link } from "@chakra-ui/react";
+import { Box, Stack, Link } from "@chakra-ui/react";
 import NextLink from "next/link";
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
