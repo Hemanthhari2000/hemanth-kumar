@@ -8,8 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "test": "jest --watch",
+    "jest": "jest",
     "prepare": "husky install",
-    "pre-commit": "yarn lint"
+    "pre-commit": "yarn lint && yarn jest"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.2.8",
