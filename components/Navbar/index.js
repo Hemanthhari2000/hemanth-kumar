@@ -28,7 +28,7 @@ const Navbar = ({ path }) => {
       <Container
         display={"flex"}
         maxW={"container.lg"}
-        p={3}
+        py={3}
         align={"center"}
         justifyContent={{ base: "space-between" }}
       >

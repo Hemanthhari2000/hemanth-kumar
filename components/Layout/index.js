@@ -1,10 +1,14 @@
+import { Container } from "@chakra-ui/react";
+
 import Navbar from "../Navbar";
 
 const Layout = ({ children, router }) => {
   return (
     <>
       <Navbar path={router.asPath} />
-      {children}
+      <Container maxW={"container.lg"} pt={16}>
+        {children}
+      </Container>
     </>
   );
 };
