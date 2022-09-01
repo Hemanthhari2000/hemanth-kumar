@@ -1597,11 +1597,6 @@
     suspend-react "^0.0.8"
     zustand "^3.7.1"
 
-"@react-three/test-renderer@^10.0.1":
-  version "10.0.1"
-  resolved "https://registry.yarnpkg.com/@react-three/test-renderer/-/test-renderer-10.0.1.tgz#fa01381212685695dc4318b0ca6f7ce478633c55"
-  integrity sha512-z9RjGhMgr66w6Zik5eWvie75Gpfgbc6g8oBnNxjbuM6vMaC3o7sstSWiKcetrGadG8/22ZcGh5td+6ztyj6JvA==
-
 "@rushstack/eslint-patch@^1.1.3":
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.1.4.tgz#0c8b74c50f29ee44f423f7416829c0bf8bb5eb27"
