@@ -23,6 +23,7 @@ const Navbar = ({ path }) => {
       data-testid={"navbar"}
       position={"fixed"}
       w={"100%"}
+      zIndex={100}
       bg={useColorModeValue("gray.100", "gray.900")}
     >
       <Container

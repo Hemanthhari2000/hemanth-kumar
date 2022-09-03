@@ -1,4 +1,5 @@
 import { Box, Flex } from "@chakra-ui/react";
+import About from "../components/About";
 import CharacterModel from "../components/CharacterModel";
 import Introduction from "../components/Introduction";
 
@@ -36,7 +37,13 @@ export default function Home() {
           </Box>
         </Flex>
       </Box>
-      <Box as={"section"} height={"90vh"} bg={"chocolate"}></Box>
+      <Box
+        as={"section"}
+        height={"90vh"}
+        //  bg={"chocolate"}
+      >
+        <About />
+      </Box>
     </>
   );
 }
