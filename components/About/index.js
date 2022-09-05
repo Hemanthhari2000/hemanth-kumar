@@ -37,24 +37,27 @@ const About = () => {
           </Flex>
           <Flex justifyContent={"center"} alignItems={"center"}>
             <Text
+              data-testid={"about-content"}
               as={"p"}
-              fontSize={{ base: "md", md: "xl" }}
+              fontSize={{ base: "md", md: "lg" }}
               fontWeight={"light"}
-              pt={{ base: "10px", md: "0px" }}
+              pt={{ base: "15px", md: "0px" }}
+              textAlign={{ base: "center", md: "start" }}
             >
-              Do minim est est veniam sit id est officia ea mollit dolore
-              voluptate. Nostrud mollit amet non quis amet. Qui labore minim
-              consectetur pariatur aliquip commodo eu eiusmod aliqua.
+              Hi, I&#8217;m an Energetic Computer Scientist with a strong
+              foundation in math, programming logic, and cross-platform coding.
+              Seeking to leverage solid development skills with a focus on
+              collaboration, communication, passion, and creativity as a
+              programmer.
               <br />
               <br />
-              Officia ullamco sit eu sit nulla minim fugiat aute. Duis mollit
-              irure nulla ipsum. Tempor sunt in in magna enim non laboris
-              deserunt. Deserunt elit laboris sit sunt exercitation ea
-              reprehenderit minim consequat dolore voluptate consequat in
-              exercitation. Magna sunt labore officia Lorem irure velit deserunt
-              Lorem eiusmod labore nisi anim nisi anim. Veniam sit fugiat amet
-              incididunt nisi. Eu incididunt commodo sunt enim laboris voluptate
-              mollit cillum esse amet adipisicing tempor veniam.
+              I&#8217;m Currently working as an Application Developer at
+              Thoughtworks. I love to innovate with technology, especially with
+              AI. I also love 3d and building 3d websites [
+              <b>
+                <i> just like this one :) </i>
+              </b>
+              ]
             </Text>
           </Flex>
         </Flex>

@@ -7,7 +7,9 @@ describe("About Section", () => {
     render(<About />);
 
     const titleInAboutComponent = screen.getByText("About");
+    const contentInAboutComponent = screen.getByTestId("about-content");
 
     expect(titleInAboutComponent).toBeInTheDocument();
+    expect(contentInAboutComponent).toBeInTheDocument();
   });
 });
