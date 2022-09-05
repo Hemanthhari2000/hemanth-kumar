@@ -1,4 +1,4 @@
-import { Text, Box, Image, Flex } from "@chakra-ui/react";
+import { Text, Box, Flex } from "@chakra-ui/react";
 import IndianFlag from "../icons/IndiaFlag";
 
 const Footer = () => {

@@ -7,7 +7,7 @@ const IndianFlag = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_416_139)">
+      <g clipPath="url(#clip0_416_139)">
         <path
           d="M6.71 0H116.17C119.87 0.02 122.88 3.05 122.88 6.75V78.73C122.88 82.44 119.84 85.48 116.13 85.48H6.71C3.02 85.46 0 82.43 0 78.73V6.75C0 3.05 3.01 0.02 6.71 0Z"
           fill="#FF9933"
