@@ -37,11 +37,7 @@ export default function Home() {
           </Box>
         </Flex>
       </Box>
-      <Box
-        as={"section"}
-        height={"90vh"}
-        //  bg={"chocolate"}
-      >
+      <Box as={"section"} height={"90vh"}>
         <About />
       </Box>
     </>

@@ -14,18 +14,13 @@ const About = () => {
             About
           </Text>
         </Flex>
-        <Flex
-          flex={9}
-          direction={{ base: "column", md: "row" }}
-          //  bg={"red"}
-        >
+        <Flex flex={9} direction={{ base: "column", md: "row" }}>
           <Flex
             h={{ md: "100%" }}
             minW={{ md: "250px" }}
             alignItems={"center"}
             justifyContent={"center"}
             mt={{ base: 4, md: 0 }}
-            // bg={"blue"}
           >
             <Image
               fallbackSrc="https://via.placeholder.com/200"

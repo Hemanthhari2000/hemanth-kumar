@@ -3,12 +3,7 @@ import { Box, Text } from "@chakra-ui/react";
 const Introduction = (props) => {
   const { title, subtitle } = props;
   return (
-    <Box
-      as={"div"}
-      maxW={400}
-      textAlign={{ base: "center", md: "start" }}
-      bg={"yellow"}
-    >
+    <Box as={"div"} maxW={400} textAlign={{ base: "center", md: "start" }}>
       <Text as={"p"} pl={1} letterSpacing={"wider"}>
         Hi{" "}
         <Text as={"span"} fontWeight={"bold"} color={"teal"}>
