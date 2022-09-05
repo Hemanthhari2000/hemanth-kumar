@@ -6,7 +6,7 @@ import Introduction from "../components/Introduction";
 export default function Home() {
   return (
     <>
-      <Box as={"section"} h={"80vh"}>
+      <Box as={"section"} h={"90vh"}>
         <Flex
           h={"100%"}
           direction={{ base: "column-reverse", md: "row" }}

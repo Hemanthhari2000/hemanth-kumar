@@ -3,7 +3,12 @@ import { Box, Text } from "@chakra-ui/react";
 const Introduction = (props) => {
   const { title, subtitle } = props;
   return (
-    <Box as={"div"} maxW={400}>
+    <Box
+      as={"div"}
+      maxW={400}
+      textAlign={{ base: "center", md: "start" }}
+      bg={"yellow"}
+    >
       <Text as={"p"} pl={1} letterSpacing={"wider"}>
         Hi{" "}
         <Text as={"span"} fontWeight={"bold"} color={"teal"}>
@@ -11,12 +16,12 @@ const Introduction = (props) => {
         </Text>
         &#44; I&#8217;am
       </Text>
-      <Text as={"h1"} fontSize={"5xl"} fontWeight={"bold"}>
+      <Text as={"h1"} fontSize={{ base: "4xl", md: "5xl" }} fontWeight={"bold"}>
         {title}
       </Text>
       <Text
         as={"p"}
-        fontSize={"lg"}
+        fontSize={{ base: "md", md: "lg" }}
         fontWeight={"semibold"}
         letterSpacing={"wide"}
       >

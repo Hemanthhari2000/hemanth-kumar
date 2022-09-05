@@ -29,6 +29,7 @@ const About = () => {
           >
             <Image
               fallbackSrc="https://via.placeholder.com/200"
+              alt="profile-picture"
               width={"200px"}
               height={"200px"}
               borderRadius={"100px"}
@@ -37,7 +38,7 @@ const About = () => {
           <Flex justifyContent={"center"} alignItems={"center"}>
             <Text
               as={"p"}
-              fontSize={"xl"}
+              fontSize={{ base: "md", md: "xl" }}
               fontWeight={"light"}
               pt={{ base: "10px", md: "0px" }}
             >
