@@ -22,7 +22,6 @@ const CharacterLoader = () => {
 
 const Character = ({ url }) => {
   const { scene } = useGLTF(url, true);
-  console.log(scene);
   return <primitive object={scene} position={[5, 5, 0]} />;
 };
 
