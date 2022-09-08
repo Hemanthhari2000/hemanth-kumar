@@ -41,7 +41,7 @@ const NavbarLinks = ({ path, testid }) => {
   );
 };
 
-const MobileNavBar = () => {
+const MobileNavBar = ({ onClose }) => {
   return (
     <Box
       pd={4}
@@ -52,7 +52,7 @@ const MobileNavBar = () => {
       alignItems={"center"}
       py={4}
     >
-      <Stack as={"nav"} spacing={6}>
+      <Stack as={"nav"} spacing={6} onClick={onClose}>
         <LinkItem href={"/works"} ismobile={"true"}>
           Works
         </LinkItem>

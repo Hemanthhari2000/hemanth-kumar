@@ -58,7 +58,7 @@ const Navbar = ({ path }) => {
           </HStack>
         </Box>
       </Container>
-      {isOpen ? <MobileNavBar /> : null}
+      {isOpen ? <MobileNavBar onClose={onClose} /> : null}
     </Box>
   );
 };
