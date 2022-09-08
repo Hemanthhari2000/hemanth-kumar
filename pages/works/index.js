@@ -1,6 +1,6 @@
 import { Box, Flex, Text, Wrap, WrapItem } from "@chakra-ui/react";
-import WorkCard from "../components/WorkCard";
-import getWorkData from "../lib/workData";
+import WorkCard from "../../components/WorkCard";
+import { workData } from "../../lib/workData";
 
 const Works = ({ works }) => {
   return (
@@ -28,7 +28,7 @@ const Works = ({ works }) => {
 };
 
 export const getStaticProps = async () => {
-  const works = getWorkData();
+  const works = workData;
   return {
     props: {
       works,

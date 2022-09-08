@@ -21,13 +21,13 @@ describe("Work Card render Test", () => {
     const work = {
       URL: "testURL",
       title: "FC Loaders",
-      description: "Animated Loaders package purely built on Flutter",
+      oneLineDescription: "Animated Loaders package purely built on Flutter",
     };
 
     render(<WorkCard work={work} />);
 
     const titleInCard = screen.getByText(work.title);
-    const descriptionInCard = screen.getByText(work.description);
+    const descriptionInCard = screen.getByText(work.oneLineDescription);
 
     expect(titleInCard).toBeInTheDocument();
     expect(descriptionInCard).toBeInTheDocument();
