@@ -7,8 +7,10 @@ import {
   useColorModeValue,
   useDisclosure,
 } from "@chakra-ui/react";
-import Logo from "./logo";
+
 import NavbarLinks, { MobileNavBar } from "./navbarLinks";
+
+import Logo from "./logo";
 import FiSun from "../icons/FiSun";
 import FiMoon from "../icons/FiMoon";
 import FiX from "../icons/FiX";

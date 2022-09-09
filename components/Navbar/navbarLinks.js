@@ -10,7 +10,7 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
         as={"a"}
         target={target}
         p={2}
-        bg={props.ismobile ? undefined : active ? "teal" : undefined}
+        bg={props.ismobile ? undefined : active ? "teal.400" : undefined}
         borderRadius={"md"}
         fontWeight={"semibold"}
         _hover={{ bg: "teal.500" }}
