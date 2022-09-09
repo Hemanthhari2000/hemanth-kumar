@@ -1,8 +1,8 @@
 import { Wrap, WrapItem } from "@chakra-ui/react";
-import CardLayout from "../components/Layout/CardLayout";
-import CardTitleLayout from "../components/Layout/cardTitleLayout";
-import PostCard from "../components/WorkCard/postCard";
-import { postsData } from "../lib/postsData";
+import CardLayout from "../components/Layout/Card/cardLayout";
+import CardTitleLayout from "../components/Layout/Card/cardTitleLayout";
+import PostCard from "../components/Cards/postCard";
+import { postsData } from "../lib/data/postsData";
 
 const Posts = ({ posts }) => {
   return (

@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 
-import WorkCard from "../components/WorkCard";
+import WorkCard from "../components/Cards/workCard";
 
 jest.mock("@chakra-ui/react", () => {
   const originalModule = jest.requireActual("@chakra-ui/react");

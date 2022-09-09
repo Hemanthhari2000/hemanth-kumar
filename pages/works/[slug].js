@@ -5,7 +5,7 @@ import WorkDetailsDescription from "../../components/WorkDetails/workDetailsDesc
 import WorkDetailHeader from "../../components/WorkDetails/workDetailsHeader";
 import WorkDetailSubHeader from "../../components/WorkDetails/workDetailsSubHeader";
 
-import { workData } from "../../lib/workData";
+import { workData } from "../../lib/data/workData";
 
 const WorkDetails = ({ work }) => {
   let isImg = true;

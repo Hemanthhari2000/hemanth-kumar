@@ -1,8 +1,8 @@
 import { Wrap, WrapItem } from "@chakra-ui/react";
-import CardLayout from "../../components/Layout/CardLayout";
-import CardTitleLayout from "../../components/Layout/cardTitleLayout";
-import WorkCard from "../../components/WorkCard";
-import { workData } from "../../lib/workData";
+import CardLayout from "../../components/Layout/Card/cardLayout";
+import CardTitleLayout from "../../components/Layout/Card/cardTitleLayout";
+import WorkCard from "../../components/Cards/workCard";
+import { workData } from "../../lib/data/workData";
 
 const Works = ({ works }) => {
   return (

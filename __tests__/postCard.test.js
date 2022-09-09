@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 
-import PostCard from "../components/WorkCard/postCard";
+import PostCard from "../components/Cards/postCard";
 
 jest.mock("@chakra-ui/react", () => {
   const originalModule = jest.requireActual("@chakra-ui/react");

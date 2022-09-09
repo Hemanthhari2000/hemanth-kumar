@@ -18,6 +18,7 @@ const PostCard = ({ post }) => {
     <Link
       href={post.source}
       overflow={"hidden"}
+      isExternal
       _hover={{
         textDecoration: "none",
       }}
