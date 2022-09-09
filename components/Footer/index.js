@@ -1,7 +1,8 @@
-import { Text, Box, Flex } from "@chakra-ui/react";
+import { Text, Box, Flex, useColorModeValue } from "@chakra-ui/react";
 import IndianFlag from "../icons/IndiaFlag";
 
 const Footer = () => {
+  const fontColor = useColorModeValue("blackAlpha.800", "whiteAlpha.800");
   return (
     <Flex
       as={"footer"}
@@ -11,6 +12,8 @@ const Footer = () => {
       justifyContent={"center"}
       alignItems={"center"}
       fontSize={"sm"}
+      color={fontColor}
+      fontWeight={"semibold"}
     >
       <Flex alignItems={"center"}>
         <Text>Proudly made in </Text>
