@@ -1,4 +1,5 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Button, Link, Text } from "@chakra-ui/react";
+import FiChevronRight from "../icons/FiChevronRight";
 
 const Introduction = (props) => {
   const { title, subtitle } = props;
@@ -22,6 +23,17 @@ const Introduction = (props) => {
       >
         {subtitle}
       </Text>
+      <Link href={"/works/"} _hover={{ textDecoration: "none" }}>
+        <Button
+          mt={4}
+          colorScheme={"teal"}
+          rightIcon={<FiChevronRight />}
+          fontSize={"16px"}
+          fontWeight={"bold"}
+        >
+          My Portfolio
+        </Button>
+      </Link>
     </Box>
   );
 };
