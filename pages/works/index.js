@@ -1,20 +1,14 @@
-import { Box, Flex, Text, Wrap, WrapItem } from "@chakra-ui/react";
+import { Wrap, WrapItem } from "@chakra-ui/react";
+import CardLayout from "../../components/Layout/CardLayout";
+import CardTitleLayout from "../../components/Layout/cardTitleLayout";
 import WorkCard from "../../components/WorkCard";
 import { workData } from "../../lib/workData";
 
 const Works = ({ works }) => {
   return (
     <>
-      <Box as={"section"} mb={"50px"}>
-        <Flex
-          h={20}
-          alignItems={"center"}
-          justifyContent={{ base: "center", md: "flex-start" }}
-        >
-          <Text as={"h1"} fontSize={"25px"} fontWeight={"bold"}>
-            Works
-          </Text>
-        </Flex>
+      <CardLayout>
+        <CardTitleLayout title={"Works"} />
         <Wrap spacing={5} justify={{ base: "center" }}>
           {works.map((work) => (
             <WrapItem key={work["title"]}>
@@ -22,7 +16,7 @@ const Works = ({ works }) => {
             </WrapItem>
           ))}
         </Wrap>
-      </Box>
+      </CardLayout>
     </>
   );
 };
