@@ -1,6 +1,8 @@
 import { Badge, Box, Flex, Image, Link, Wrap } from "@chakra-ui/react";
+import Footer from "../../components/Footer";
 
 import FiExternalLink from "../../components/icons/FiExternalLink";
+import PageTransition from "../../components/PageTransition";
 import WorkDetailsDescription from "../../components/WorkDetails/workDetailsDescription";
 import WorkDetailHeader from "../../components/WorkDetails/workDetailsHeader";
 import WorkDetailSubHeader from "../../components/WorkDetails/workDetailsSubHeader";
@@ -14,7 +16,7 @@ const WorkDetails = ({ work }) => {
     isImg = ["png", "jpg", "jpeg"].includes(urlFormat);
   }
   return (
-    <>
+    <PageTransition delay={0.9}>
       <WorkDetailHeader projectName={work.title} />
       <Flex
         as={"section"}
@@ -66,7 +68,8 @@ const WorkDetails = ({ work }) => {
           </Box>
         </Flex>
       </Flex>
-    </>
+      <Footer />
+    </PageTransition>
   );
 };
 

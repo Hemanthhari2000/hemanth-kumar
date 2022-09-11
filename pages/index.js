@@ -1,11 +1,13 @@
 import { Box, Flex } from "@chakra-ui/react";
 import About from "../components/About";
 import CharacterModel from "../components/CharacterModel";
+import Footer from "../components/Footer";
 import Introduction from "../components/Introduction";
+import PageTransition from "../components/PageTransition";
 
 export default function Home() {
   return (
-    <>
+    <PageTransition delay={0.3}>
       <Box as={"section"} h={"90vh"}>
         <Flex
           h={"100%"}
@@ -40,6 +42,7 @@ export default function Home() {
       <Box as={"section"} height={"90vh"}>
         <About />
       </Box>
-    </>
+      <Footer />
+    </PageTransition>
   );
 }

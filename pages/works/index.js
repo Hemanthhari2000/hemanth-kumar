@@ -3,10 +3,11 @@ import CardLayout from "../../components/Layout/Card/cardLayout";
 import CardTitleLayout from "../../components/Layout/Card/cardTitleLayout";
 import WorkCard from "../../components/Cards/workCard";
 import { workData } from "../../lib/data/workData";
+import PageTransition from "../../components/PageTransition";
 
 const Works = ({ works }) => {
   return (
-    <>
+    <PageTransition delay={0.3}>
       <CardLayout>
         <CardTitleLayout title={"Works"} />
         <Wrap spacing={5} justify={{ base: "center" }}>
@@ -17,7 +18,7 @@ const Works = ({ works }) => {
           ))}
         </Wrap>
       </CardLayout>
-    </>
+    </PageTransition>
   );
 };
 
