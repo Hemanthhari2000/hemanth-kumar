@@ -16,7 +16,7 @@ const About = () => {
         </Flex>
         <Flex flex={9} direction={{ base: "column", md: "row" }}>
           <Flex
-            h={{ md: "100%" }}
+            h={{ md: "70%" }}
             minW={{ md: "250px" }}
             alignItems={"center"}
             justifyContent={"center"}
@@ -30,7 +30,7 @@ const About = () => {
               borderRadius={"100px"}
             />
           </Flex>
-          <Flex justifyContent={"center"} alignItems={"center"}>
+          <Flex h={"70%"} justifyContent={"center"} alignItems={"center"}>
             <Text
               data-testid={"about-content"}
               as={"p"}
