@@ -4,6 +4,7 @@ import CharacterModel from "../components/CharacterModel";
 import Footer from "../components/Footer";
 import Introduction from "../components/Introduction";
 import PageTransition from "../components/PageTransition";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
@@ -39,9 +40,16 @@ export default function Home() {
           </Box>
         </Flex>
       </Box>
-      <Box as={"section"} height={"90vh"}>
-        <About />
-      </Box>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ amount: 0.4 }}
+        transition={{ duration: 1.4 }}
+      >
+        <Box as={"section"} height={"70vh"} my={3}>
+          <About />
+        </Box>
+      </motion.div>
       <Footer />
     </PageTransition>
   );
