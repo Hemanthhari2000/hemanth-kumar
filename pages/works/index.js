@@ -7,7 +7,7 @@ import PageTransition from "../../components/PageTransition";
 
 const Works = ({ works }) => {
   return (
-    <PageTransition delay={0.3}>
+    <PageTransition>
       <CardLayout>
         <CardTitleLayout title={"Works"} />
         <Wrap spacing={5} justify={{ base: "center" }}>

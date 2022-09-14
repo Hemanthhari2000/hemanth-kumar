@@ -16,7 +16,7 @@ const WorkDetails = ({ work }) => {
     isImg = ["png", "jpg", "jpeg"].includes(urlFormat);
   }
   return (
-    <PageTransition delay={0.9}>
+    <PageTransition>
       <WorkDetailHeader projectName={work.title} />
       <Flex
         as={"section"}

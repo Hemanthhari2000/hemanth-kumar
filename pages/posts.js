@@ -8,7 +8,7 @@ import Footer from "../components/Footer";
 
 const Posts = ({ posts }) => {
   return (
-    <PageTransition delay={0.3}>
+    <PageTransition>
       <CardLayout>
         <CardTitleLayout title={"Posts"} />
         <Wrap spacing={5} justify={{ base: "center" }}>

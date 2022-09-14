@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 export default function Home() {
   return (
-    <PageTransition delay={0.3}>
+    <PageTransition>
       <Box as={"section"} h={"90vh"}>
         <Flex
           h={"100%"}
