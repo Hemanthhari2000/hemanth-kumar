@@ -6,7 +6,11 @@ const SayHello = () => {
   return (
     <Box>
       <Box w={"216px"} h={"435px"} position={"relative"}>
-        <Image src={"/images/iphone.png"} position={"absolute"} />
+        <Image
+          src={"/images/iphone.png"}
+          alt={"phone_layout_image"}
+          position={"absolute"}
+        />
         <Flex
           ml={0.5}
           bg={"#222222"}
