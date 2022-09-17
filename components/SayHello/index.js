@@ -22,11 +22,13 @@ const SayHello = () => {
           direction={"column"}
         >
           <Image
-            src="https://via.placeholder.com/50"
+            src={"/images/profile_image.png"}
+            fallbackSrc="https://via.placeholder.com/50"
             alt={"profile_pic"}
             width={"80px"}
             height={"80px"}
-            borderRadius={"40px"}
+            borderRadius={"50%"}
+            objectFit={"cover"}
             mb={2}
           />
           <Text fontSize={"12px"} mb={2} color="whiteAlpha.800">

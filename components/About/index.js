@@ -23,11 +23,13 @@ const About = () => {
             mt={{ base: 4, md: 0 }}
           >
             <Image
+              src={"/images/profile_image.png"}
               fallbackSrc="https://via.placeholder.com/200"
               alt="profile-picture"
               width={"200px"}
               height={"200px"}
-              borderRadius={"100px"}
+              borderRadius={"50%"}
+              objectFit={"cover"}
             />
           </Flex>
           <Flex h={"70%"} justifyContent={"center"} alignItems={"center"}>
