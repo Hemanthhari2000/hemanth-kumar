@@ -1,6 +1,18 @@
-import { Box, Button, Flex, Image, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Flex,
+  Image,
+  Text,
+  useDisclosure,
+} from "@chakra-ui/react";
+import { useRef } from "react";
+import { ContactForm } from "./ContactForm";
 
 const SayHello = () => {
+  const { isOpen, onClose, onOpen } = useDisclosure();
+  const cancelRef = useRef();
+
   return (
     <Box>
       <Box w={"216px"} h={"435px"} position={"relative"}>
@@ -34,6 +46,7 @@ const SayHello = () => {
           </Text>
           <Button
             _hover={{ textDecoration: "none" }}
+            onClick={onOpen}
             variant={"outline"}
             isLoading={false}
             colorScheme={"teal"}
@@ -43,6 +56,7 @@ const SayHello = () => {
           </Button>
         </Flex>
       </Box>
+      <ContactForm cancelRef={cancelRef} onClose={onClose} isOpen={isOpen} />
     </Box>
   );
 };
