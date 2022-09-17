@@ -1,6 +1,4 @@
-import { Box, Button, Flex, Image, Link, Text } from "@chakra-ui/react";
-
-import { mailSettings } from "../../lib/mailSettings";
+import { Box, Button, Flex, Image, Text } from "@chakra-ui/react";
 
 const SayHello = () => {
   return (
@@ -34,25 +32,15 @@ const SayHello = () => {
           <Text fontSize={"12px"} mb={2} color="whiteAlpha.800">
             Wanna Connect?
           </Text>
-          <Link
-            href={"#mailgo"}
-            data-address={mailSettings.address}
-            data-domain={mailSettings.domain}
-            data-subject={mailSettings.subject}
-            data-body={mailSettings.body}
-            zIndex={2}
+          <Button
             _hover={{ textDecoration: "none" }}
+            variant={"outline"}
+            isLoading={false}
+            colorScheme={"teal"}
+            fontSize={"12px"}
           >
-            <Button
-              _hover={{ textDecoration: "none" }}
-              variant={"outline"}
-              isLoading={false}
-              colorScheme={"teal"}
-              fontSize={"12px"}
-            >
-              Say Hello &#128075;
-            </Button>
-          </Link>
+            Say Hello &#128075;
+          </Button>
         </Flex>
       </Box>
     </Box>
