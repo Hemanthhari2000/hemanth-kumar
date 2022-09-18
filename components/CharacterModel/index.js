@@ -61,7 +61,7 @@ const CharacterModel = () => {
         <ambientLight intensity={0.3} />
         <CharacterLights />
         <Suspense fallback={<CharacterLoader />}>
-          <Character url={"/model_for_portfolio_06.glb"} />
+          <Character url={"/portfolio_model.glb"} />
         </Suspense>
       </Canvas>
     </>
