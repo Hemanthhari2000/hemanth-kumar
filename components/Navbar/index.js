@@ -26,7 +26,7 @@ const Navbar = ({ path }) => {
       position={"fixed"}
       w={"100%"}
       zIndex={100}
-      bg={useColorModeValue("gray.100", "gray.900")}
+      bg={useColorModeValue("#FFE7E1", "gray.900")}
     >
       <Container
         display={"flex"}
