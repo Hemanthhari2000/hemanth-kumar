@@ -1,7 +1,6 @@
 import { Box, Flex, Text, Button } from "@chakra-ui/react";
 import NextLink from "next/link";
 
-import Footer from "../components/Footer";
 import PageTransition from "../components/PageTransition";
 
 const ErrorPage = () => {
@@ -36,7 +35,6 @@ const ErrorPage = () => {
           </Box>
         </Flex>
       </Box>
-      <Footer />
     </PageTransition>
   );
 };

@@ -1,5 +1,4 @@
 import { Flex } from "@chakra-ui/react";
-import Footer from "../components/Footer";
 import CardTitleLayout from "../components/Layout/Card/cardTitleLayout";
 import ConnectLinks from "../components/Connect/ConnectLink";
 import CardLayout from "../components/Layout/Card/cardLayout";
@@ -38,7 +37,6 @@ const Connect = () => {
             </Flex>
           </Flex>
         </CardLayout>
-        <Footer />
       </PageTransition>
     </>
   );

@@ -1,7 +1,6 @@
 import { Box, Flex } from "@chakra-ui/react";
 import About from "../components/About";
 import CharacterModel from "../components/CharacterModel";
-import Footer from "../components/Footer";
 import Introduction from "../components/Introduction";
 import PageTransition from "../components/PageTransition";
 import { motion } from "framer-motion";
@@ -50,7 +49,6 @@ export default function Home() {
           <About />
         </Box>
       </motion.div>
-      <Footer />
     </PageTransition>
   );
 }

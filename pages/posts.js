@@ -4,7 +4,6 @@ import CardTitleLayout from "../components/Layout/Card/cardTitleLayout";
 import PostCard from "../components/Cards/postCard";
 import { postsData } from "../lib/data/postsData";
 import PageTransition from "../components/PageTransition";
-import Footer from "../components/Footer";
 
 const Posts = ({ posts }) => {
   return (
@@ -19,7 +18,6 @@ const Posts = ({ posts }) => {
           ))}
         </Wrap>
       </CardLayout>
-      <Footer />
     </PageTransition>
   );
 };

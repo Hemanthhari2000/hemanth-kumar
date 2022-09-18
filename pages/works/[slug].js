@@ -1,5 +1,4 @@
 import { Badge, Box, Flex, Image, Link, Wrap } from "@chakra-ui/react";
-import Footer from "../../components/Footer";
 
 import FiExternalLink from "../../components/icons/FiExternalLink";
 import PageTransition from "../../components/PageTransition";
@@ -68,7 +67,6 @@ const WorkDetails = ({ work }) => {
           </Box>
         </Flex>
       </Flex>
-      <Footer />
     </PageTransition>
   );
 };
