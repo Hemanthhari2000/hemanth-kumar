@@ -1,4 +1,5 @@
 import { Box, Flex, Link, Text, useColorModeValue } from "@chakra-ui/react";
+import NextLink from "next/link";
 
 import FiChevronRight from "../icons/FiChevronRight";
 
@@ -8,15 +9,17 @@ const WorkDetailHeader = (props) => {
     <Flex h={20} alignItems={"center"}>
       <Text as={"h1"} fontSize={"25px"} fontWeight={"bold"}>
         <Flex alignItems={"center"}>
-          <Link
-            href={"/works/"}
-            textDecoration={"underline"}
-            _hover={{
-              color: "teal.400",
-            }}
-          >
-            Works
-          </Link>
+          <NextLink href={'/works/'} passHref>
+            <Link
+              as={'a'}
+              textDecoration={"underline"}
+              _hover={{
+                color: "teal.400",
+              }}
+            >
+              Works
+            </Link>
+          </NextLink>
           <Box as={"span"} px={2}>
             <FiChevronRight />
           </Box>
